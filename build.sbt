@@ -6,3 +6,5 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-xml-manipulator"
   )
+
+libraryDependencies += "com.sun.xml.bind" % "jaxb-impl" % "2.3.3"
