@@ -3,10 +3,27 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "employee")
 public class Employee {
-    private Long name;
+    private String name;
+    private String employeeId;
+
+    public Employee() {
+    }
 
     @XmlElement(name = "name")
-    public void setName(Long name) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    @XmlElement(name = "empId")
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 }
