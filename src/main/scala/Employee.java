@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Employee {
     private String name;
     private String employeeId;
+    private Contacts contacts;
 
     public Employee() {
     }
@@ -25,5 +26,14 @@ public class Employee {
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
+    }
+
+    @XmlElement(name = "contactDetails")
+    public Contacts getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(Contacts contacts) {
+        this.contacts = contacts;
     }
 }

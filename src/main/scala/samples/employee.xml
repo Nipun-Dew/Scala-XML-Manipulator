@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee>
+    <contactDetails>
+        <address>test</address>
+        <email>test@gmail.com</email>
+        <mobile>0774234235</mobile>
+    </contactDetails>
+    <empId>12152293845</empId>
+    <name>Nipun Dew</name>
+</employee>
